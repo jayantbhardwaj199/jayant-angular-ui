@@ -30,6 +30,7 @@ jobs:
       - name: Deploy to Firebase from subdirectory
         run: |
           cd angular-starter
+          npm install firebase-tools
           npx firebase deploy --only hosting --token "$FIREBASE_TOKEN"
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
