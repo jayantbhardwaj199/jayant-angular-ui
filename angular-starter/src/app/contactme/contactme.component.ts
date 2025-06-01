@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { debug } from 'console';
-import { Message } from 'emailjs';
 import { EmailService } from '../email.service';
 
 
